@@ -10,22 +10,14 @@
         <h1 style="margin-left: auto; margin-right: auto;"> Практическое задание №6 </h1>
         <div style="margin-left: auto; margin-right: auto; width: 40%; background-color: #62af44; border: solid; border-color: #457a2f;">
             <select id="goodsList" style="display: flex; margin-left: auto; margin-right: auto; background-color: #8bf362; margin-top: 10px;">
-                <option value="pr1">Плитка 1X1</option>
+                <option value="pr1">Плитка белая 1X1</option>
                 <option value="pr2">Фактурная плитка 1X1</option>
                 <option value="pr3">Фактурная плитка 2X2</option>
-                <option value="pr4">Плитка 1.5X1.5</option>
+                <option value="pr4">Плитка серая 1.5X1.5</option>
                 <option value="pr5">Пластина 4X4</option>
             </select>
             <input id="amount" placeholder="Количество" style="display: flex; margin-left: auto; margin-right: auto; background-color: #8bf362; margin-top: 10px;">
-            <div id="additional" style="display: flex; flex-direction: column;">
-                <h4 style="display: flex; margin-right: auto; margin-left: auto;"> Цвет: </h4>
-                <select id="colorList" style="display: flex; margin-left: auto; margin-right: auto; background-color: #8bf362;">
-                    <option value="col1" selected="true">Белый</option>
-                    <option value="col2">Коричневый</option>
-                    <option value="col3">Чёрный</option>
-                    <option value="col4">Зелёный</option>
-                    <option value="col5">Кремово-жёлтый</option>
-                </select>
+            <div id="servBlock" style="display: flex; flex-direction: column;">
                 <h4 style="display: flex; margin-right: auto; margin-left: auto;"> Услуга: </h4>
                 <div style="display: flex; flex-direction: column;  margin-left: auto; margin-right: auto;">
                     <label style="display: flex;"><input type="radio"
@@ -35,13 +27,24 @@
                         name="RB" value="placing">
                         Укладка</label>
                     <label style="display: flex;"><input type="radio"
-                        name="RB" value="desigh">
+                        name="RB" value="design">
                         Дизайн</label>
-                </div>
-                <div id="options">
+                    <label style="display: flex;"><input type="radio"
+                        name="RB" value="nothing">
+                        Только товар</label>
                 </div>
             </div>
-            <div id="properties" style="display: flex; flex-direction: column; margin-left: auto; margin-top: 20px; margin-right: auto;">
+            <div id="colBlock" style="display: none; flex-direction: column;">
+                <h4 style="display: flex; margin-right: auto; margin-left: auto;"> Цвет: </h4>
+                <select id="colorList" style="display: flex; margin-left: auto; margin-right: auto; background-color: #8bf362;">
+                    <option value="col1" selected="true">Белый</option>
+                    <option value="col2">Коричневый</option>
+                    <option value="col3">Чёрный</option>
+                    <option value="col4">Зелёный</option>
+                    <option value="col5">Кремово-жёлтый</option>
+                </select>
+            </div>
+            <div id="propBlock" style="display: flex; flex-direction: column; margin-left: auto; margin-right: auto;">
                 <h4 style="display: flex; margin-right: auto; margin-left: auto;"> Дополнительно: </h4>
                 <div style="display: flex; flex-direction: row;">
                     <label style="display: flex; margin-left: auto; margin-right: 10px;"><input type="checkbox"
@@ -52,7 +55,6 @@
                         Глазурированная</label>
                 </div>
             </div>
-            <button id="calculate" style="display: flex; order: 2; margin-left: auto; margin-top: 30px; margin-right: auto; background-color:#8bf362;"> Посчитать </button>
             <div style="display: flex; flex-direction: column;">
                 <h4 style="margin-left: auto; margin-right: auto;"> Результат: </h4>
                 <div id="result" style="margin-left: auto; margin-right: auto;"></div>
