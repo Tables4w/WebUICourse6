@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <title> Практическое задание №5 </title>
+        <script defer src="calc.js"></script>
+    </head>
+
+    <body style="display: flex; flex-direction: column;">
+        <h1 style="margin-left: auto; margin-right: auto;"> Практическое задание №5 </h1>
+        <div style="margin-left: auto; margin-right: auto; width: 40%; background-color: #62af44; border: solid; border-color: #457a2f;">
+            <select id="goodsList" style="display: flex; margin-left: auto; margin-right: auto; background-color: #8bf362; margin-top: 10px;">
+                <option value="pr1">Серый 1X1</option>
+                <option value="pr2">Фактурная серый 1X1</option>
+                <option value="pr3">Фактурная белый 1X1</option>
+                <option value="pr4">Коричневая 1.5X1.5</option>
+                <option value="pr5">Зелёная 1.5X1.5</option>
+            </select>
+            <input id="amount" placeholder="Количество" style="display: flex; margin-left: auto; margin-right: auto; background-color: #8bf362; margin-top: 10px;">
+            <button id="calculate" style="display: flex; order: 2; margin-left: auto; margin-top: 20px; margin-right: auto; background-color:#8bf362;"> Посчитать </button>
+            <div style="display: flex; flex-direction: column;">
+                <h4 style="margin-left: auto; margin-right: auto;"> Результат: </h4>
+                <div id="result" style="margin-left: auto; margin-right: auto;"></div>
+            </div>
+        </div>
+    </body>
+</html>
